@@ -1,0 +1,28 @@
+{
+  "name": "camino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabe-kurage/camino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabe-kurage/camino/issues"
+  },
+  "homepage": "https://github.com/nabe-kurage/camino#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-plumber": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.1"
+  }
+}

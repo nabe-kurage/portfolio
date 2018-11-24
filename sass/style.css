@@ -1,0 +1,542 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------
+  reset
+  ----------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---------------------------------------------------------------------
+    basic
+----------------------------------------------------------------------*/
+.sec-hero, .wall-back {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrap-heroletter, .btn-menu {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*---------------------------------------------------------------------
+   style
+  ----------------------------------------------------------------------*/
+body {
+  font-family: 'Avenir Next Condensed', 'Noto Sans Japanese', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 100;
+}
+
+.hed {
+  text-align: center;
+  margin: auto;
+  font-size: 48px;
+  font-weight: lighter;
+  color: transparent;
+}
+
+.sec {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/********** section hero **********/
+.sec-hero {
+  position: relative;
+  padding-top: 0;
+  background-color: #FFFFFF;
+}
+
+.wrap-heroletter {
+  position: absolute;
+  margin: auto;
+  width: 366px;
+  height: 56px;
+  text-align: center;
+}
+
+.wrap-heroletter::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ADD8E6;
+}
+
+.hed-hero {
+  background-image: url("/camino/img/title-hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 56px;
+  width: 366px;
+  height: 62px;
+  z-index: 1;
+}
+
+.letter-top {
+  background-image: url("/camino/img/font-hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-align: center;
+  color: transparent;
+  width: 140px;
+}
+
+/********** section work **********/
+.sec-work {
+  background-color: #ADD8E6;
+}
+
+.hed-work {
+  text-align: center;
+  background-image: url("/camino/img/title-work.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 99px;
+}
+
+.wrap-worklist {
+  margin-top: 24px;
+}
+
+.list-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.litem-work {
+  width: 32%;
+  background-color: #FFFFFF;
+  border: 1px solid #AAAAB8;
+  flex: 0 1 auto;
+  transition: all 0.3s;
+  overflow: hidden;
+  margin-top: 0;
+  margin-right: 2%;
+  margin-bottom: 25px;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.litem-work:hover {
+  transform: translateY(-8px);
+}
+
+.litem-work:nth-child(3n) {
+  margin-right: 0;
+}
+
+.wrap_iframe {
+  position: relative;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #AAAAB8;
+  height: 265px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrap_infowork {
+  padding-top: 8px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+}
+
+.inner-workinfo {
+  font-size: 12px;
+}
+
+/********** section skill **********/
+.sec-skill {
+  background-color: beige;
+}
+
+.hed-skill {
+  text-align: center;
+  background-image: url("/camino/img/title-skill.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 79px;
+}
+
+.list-skill {
+  width: 640px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1px solid #AAAAB8;
+}
+
+.litem-skill {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.litem-skill + .litem-skill {
+  margin-top: 16px;
+}
+
+.outer-title {
+  width: 25%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.outer-bar {
+  background-color: #FFFFFF;
+  border: 1px solid #AAAAB8;
+  height: 8px;
+  width: 75%;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.inner-bar {
+  background-color: #ADD8E6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 8px;
+  transition: width 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 0%;
+}
+
+/********** section about **********/
+.hed-about {
+  text-align: center;
+  background-image: url("/camino/img/title-about.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 177px;
+  position: relative;
+}
+
+.hed-about:before {
+  width: 60px;
+  height: 60px;
+  content: "";
+  top: -32px;
+  right: -100px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  animation-name: ghost;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.hed-about:after {
+  width: 32px;
+  height: 32px;
+  content: "";
+  top: 28px;
+  right: -142px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  animation-name: ghost;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.wrap-profile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap-profileimg {
+  width: 50%;
+  text-align: center;
+}
+
+.anime-profile {
+  background: url("/camino/img/anime-test.png");
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  animation-name: profile;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: steps(3);
+  animation-iteration-count: infinite;
+}
+
+.wrap-listprofile {
+  width: 50%;
+  margin-top: 24px;
+}
+
+.list-profile {
+  font-size: 0;
+  text-align: left;
+}
+
+.list-profile dt {
+  display: inline-block;
+  width: 30%;
+  font-size: 16px;
+}
+
+.list-profile dd {
+  display: inline-block;
+  width: 70%;
+  font-size: 16px;
+}
+
+.wrap-footer {
+  height: 10px;
+  background-color: #AAAAB8;
+}
+
+/********** menu **********/
+.wrap-btnmenu {
+  position: fixed;
+  width: 68px;
+  height: 68px;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.inner-btnmenu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-menu {
+  position: absolute;
+  width: 36px;
+  height: calc(12px *3);
+  cursor: pointer;
+}
+
+.bar-humbergar {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #000000;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.bar-humbergar + .bar-humbergar {
+  margin-top: 8px;
+}
+
+.wrap-menu {
+  background-color: #AAAAB8;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translate3d(25vw, 0, 0);
+  width: 25vw;
+  height: 100vh;
+  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: 3;
+}
+
+.list-nav {
+  margin-top: 80px;
+  margin-left: 40px;
+  font-size: 28px;
+}
+
+.litem-nav > a {
+  color: #FFFFFF;
+}
+
+.wall-back {
+  background-color: #000000;
+  display: none;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.is_open .bar-humbergar {
+  background-color: #FFFFFF;
+}
+
+.is_open .bar-humbergar:nth-of-type(1) {
+  transform: translateY(12px) rotateZ(45deg);
+}
+
+.is_open .bar-humbergar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.is_open .bar-humbergar:nth-of-type(3) {
+  transform: translateY(-12px) rotateZ(-45deg);
+}
+
+.is_open .wrap-menu {
+  transform: translate3d(0, 0, 0);
+}
+
+.is_open .wall-back {
+  display: block;
+}
+
+/*---------------------------------------------------------------------
+   jsi・jsc
+----------------------------------------------------------------------*/
+#jsi-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+/*---------------------------------------------------------------------
+   for sp
+----------------------------------------------------------------------*/
+@media all and (max-width: 900px) {
+  .litem-work {
+    width: 49%;
+  }
+  .litem-work:nth-child(3n) {
+    margin-right: 2%;
+  }
+  .litem-work:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /********** all **********/
+  /********** sec hero **********/
+  .wrap-heroletter {
+    width: 240px;
+    height: 36px;
+  }
+  .hed-hero {
+    width: 240px;
+    height: 40px;
+    font-size: 36px;
+  }
+  /********** sec work **********/
+  .list-work {
+    display: block;
+  }
+  .litem-work {
+    height: auto;
+    margin: auto;
+    width: 100%;
+  }
+  .litem-work + .litem-work {
+    margin-left: auto;
+    margin-top: 8px;
+  }
+  /********** sec skill **********/
+  .list-skill {
+    width: 100%;
+  }
+  .wrap-profile {
+    width: 240px;
+  }
+  .outer-title {
+    width: 100%;
+    text-align: center;
+  }
+  .outer-bar {
+    width: 100%;
+  }
+  /********** sec about **********/
+  .hed-about:before {
+    content: none;
+  }
+  .hed-about:after {
+    content: none;
+  }
+  .wrap-profileimg {
+    width: 100%;
+  }
+  .wrap-listprofile {
+    width: 100%;
+  }
+  .list-profile dt {
+    width: 50%;
+  }
+  .list-profile dd {
+    width: 50%;
+  }
+  /********** menu **********/
+  .wrap-menu {
+    width: 100vw;
+    transform: translate3d(100vw, 0, 0);
+  }
+}
+
+/*---------------------------------------------------------------------
+   animation
+----------------------------------------------------------------------*/
+@keyframes ghost {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+@keyframes profile {
+  90% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -480px 0;
+  }
+}
