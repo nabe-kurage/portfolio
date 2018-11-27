@@ -32,7 +32,7 @@ a {
     basic
 ----------------------------------------------------------------------*/
 //set
-$root : "/camino";
+$root : "./portfolio";
 //font
 $size-title: 56px;
 $size-hed: 48px;
@@ -40,7 +40,7 @@ $size-subhed: 24px;
 $size-text: 16px;
 
 //color
-$pink : #ED9E9E; //TODO いろ変更するならここ削除する。
+$yellow : #F5F5DE;
 $blue : #ADD8E6;
 $white : #FFFFFF;
 $black: #000000;
@@ -113,7 +113,7 @@ body {
     position: absolute;
     @extend %posi-center;
     margin: auto;
-    width:366px;
+    width: 366px;
     height: $size-title;
     text-align: center;
     &::before {
@@ -285,7 +285,7 @@ body {
 /********** section about **********/ 
 .hed-about {
     text-align: center;
-    @include back-title("/camino/img/title-about.png");
+    @include back-title($root+"/img/title-about.png");
     width:177px;
     position: relative;
 

@@ -26,7 +26,7 @@ gulp.task("reload", function () {
 })
 
 gulp.task("default", ['server'], function () {
+    //TODO: watchされるとsassにcssできるのとindexのwatch
     gulp.watch("./sass/**/*.scss", ["sass", "reload"]);
-    gulp.watch("./*.html", ["sass", "reload"]);
-    gulp.watch()
+    gulp.watch("./*.html", ["reload"]);
 });
