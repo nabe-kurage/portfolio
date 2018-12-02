@@ -127,7 +127,7 @@ body {
     }  
 }
 .hed-hero {
-    @include back-title("./img/title-hero.png");
+    @include back-title("./portfolio/img/title-hero.png");
     position: relative;
     font-size: $size-title;
     width:366px;
