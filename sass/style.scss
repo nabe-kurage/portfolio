@@ -32,7 +32,7 @@ a {
     basic
 ----------------------------------------------------------------------*/
 //set
-$root : "./portfolio";
+$root : "../";
 //font
 $size-title: 56px;
 $size-hed: 48px;
@@ -127,7 +127,7 @@ body {
     }  
 }
 .hed-hero {
-    @include back-title("../img/title-hero.png");
+    @include back-title($root+"img/title-hero.png");
     position: relative;
     font-size: $size-title;
     width:366px;
@@ -135,7 +135,7 @@ body {
     z-index: 1;  
 }
 .letter-top {
-    @include back-title($root+"/img/font-hero.png");
+    @include back-title($root+"img/font-hero.png");
     display: inline-block;
     text-align: center;
     color: transparent;
@@ -147,7 +147,7 @@ body {
 }
 .hed-work {
     text-align: center;
-    @include back-title($root+"/img/title-work.png");
+    @include back-title($root+"img/title-work.png");
     width:99px;
 }
 .wrap-worklist {
@@ -229,7 +229,7 @@ body {
 }
 .hed-skill {
     text-align: center;
-    @include back-title($root+"/img/title-skill.png");
+    @include back-title($root+"img/title-skill.png");
     width:79px;
 }
 .list-skill {
@@ -285,7 +285,7 @@ body {
 /********** section about **********/ 
 .hed-about {
     text-align: center;
-    @include back-title($root+"/img/title-about.png");
+    @include back-title($root+"img/title-about.png");
     width:177px;
     position: relative;
 
@@ -337,7 +337,7 @@ body {
     text-align: center;
 }
 .anime-profile {
-    background: url($root+"/img/anime-test.png");
+    background: url($root+"img/anime-test.png");
     background-repeat: no-repeat;
     width: 160px;
     height: 160px;
