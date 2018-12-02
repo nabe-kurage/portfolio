@@ -98,7 +98,7 @@ body {
 }
 
 .hed-hero {
-  background-image: url("./portfolio/img/title-hero.png");
+  background-image: url("../img/title-hero.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
