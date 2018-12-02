@@ -98,7 +98,7 @@ body {
 }
 
 .hed-hero {
-  background-image: url("/img/title-hero.png");
+  background-image: url("./img/title-hero.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
@@ -109,7 +109,7 @@ body {
 }
 
 .letter-top {
-  background-image: url("/img/font-hero.png");
+  background-image: url("./portfolio/img/font-hero.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -125,7 +125,7 @@ body {
 
 .hed-work {
   text-align: center;
-  background-image: url("/img/title-work.png");
+  background-image: url("./portfolio/img/title-work.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 99px;
@@ -195,7 +195,7 @@ body {
 
 .hed-skill {
   text-align: center;
-  background-image: url("/img/title-skill.png");
+  background-image: url("./portfolio/img/title-skill.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 79px;
@@ -255,7 +255,7 @@ body {
 /********** section about **********/
 .hed-about {
   text-align: center;
-  background-image: url("/img/title-about.png");
+  background-image: url("./portfolio/img/title-about.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 177px;
@@ -315,7 +315,7 @@ body {
 }
 
 .anime-profile {
-  background: url("/img/anime-test.png");
+  background: url("./portfolio/img/anime-test.png");
   background-repeat: no-repeat;
   width: 160px;
   height: 160px;
